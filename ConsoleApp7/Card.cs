@@ -5,9 +5,8 @@ abstract class Card
 {
     public int Id;
     public int Balance;
-    public int Bonus;
-
-    public string _cardnumber;
+    public double Bonus;
+    private string _cardnumber;
     public string CardNumber
     {   get
         {
@@ -24,16 +23,9 @@ abstract class Card
         }
             
     }
+    public BankName Bank;
 
     
     public abstract bool WithDraw(int takingSum);
-    public void MaskCard(Card CardNumber)
-    {
-
-        for (int i = 3; i < 12; i++)
-        {
-            CardNumber[i] = "*"
-        }
-       
-    }
+	
 }
