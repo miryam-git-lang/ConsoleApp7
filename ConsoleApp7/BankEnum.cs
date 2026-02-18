@@ -1,12 +1,9 @@
-﻿sealed partial class CreditCard
+﻿
+enum BankName
 {
-    enum Bank
-    {
-        ABB,
+	ABB,
 
-        KapitalBank,
+	KapitalBank,
 
-        LeoBank,
-    }
+	LeoBank,
 }
-   
